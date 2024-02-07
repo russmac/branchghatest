@@ -1,7 +1,6 @@
 name: test
 on:
   workflow_dispatch:
-    - cron: "0 3 * * *"
 
 jobs:
   test:
@@ -9,4 +8,4 @@ jobs:
     steps:
       - name: I am a workflow
         shell: bash
-
+        run: echo "hello world from a feat branch"
