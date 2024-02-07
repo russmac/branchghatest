@@ -1,0 +1,12 @@
+name: test
+on:
+  workflow_dispatch:
+    - cron: "0 3 * * *"
+
+jobs:
+  test:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: I am a workflow
+        shell: bash
+
